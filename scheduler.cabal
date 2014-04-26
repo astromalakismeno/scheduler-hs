@@ -8,16 +8,8 @@ synopsis: scheduler
 description: Scheduling resources and tasks.
 data-dir: ""
 
-executable cmore-penis
+executable scheduler
     build-depends: time -any, sqlite-simple -any, base -any
     main-is: Main.hs
     buildable: True
-    hs-source-dirs: src
-
-test-suite test-cmore-penis
-    build-depends: QuickCheck -any, base -any
-    type: exitcode-stdio-1.0
-    main-is: Main.hs
-    buildable: True
-    cpp-options: -DMAIN_FUNCTION=testMain
     hs-source-dirs: src
