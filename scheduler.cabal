@@ -1,0 +1,23 @@
+name: scheduler
+version: 0.0.1
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+synopsis: scheduler
+description: Scheduling resources and tasks.
+data-dir: ""
+
+executable cmore-penis
+    build-depends: time -any, sqlite-simple -any, base -any
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
+
+test-suite test-cmore-penis
+    build-depends: QuickCheck -any, base -any
+    type: exitcode-stdio-1.0
+    main-is: Main.hs
+    buildable: True
+    cpp-options: -DMAIN_FUNCTION=testMain
+    hs-source-dirs: src
